@@ -13,7 +13,7 @@ Diseñada para equipos de QA que buscan reducir el tiempo invertido en documenta
 
 ---
 
-## 🚀 Instalación
+## 🚀 Instalación Windows
 
 **1. Clona el repositorio:**
 ```bash
@@ -36,17 +36,29 @@ activate
 **3. Instala las dependencias:**
 
 ```bash
-# Regresar a la carpeta env
+# 1. Regresar a la carpeta env
 cd.. 
 
-# Regresar a la carpeta qa-evidence-generator
+# 2. Regresar a la carpeta qa-evidence-generator
 cd..
-```
 
-```bash
-# Estando en la ruta del principal del proyecto realizamos el siguiente comando para instalar las dependencias
+# 3. Estando en la ruta del principal del proyecto realizamos el siguiente comando para instalar las dependencias
+
+# Ejemplo:
+# (env) C:\Users\{YOUR_USERNAME}\OneDrive\Desktop\Repos\evidence-generator-excel-to-word>pip install -r requirements.txt
+
 pip install -r requirements.txt
 ```
+
+
+## ▶️ Cómo ejecutar el programa
+
+Una vez realizada la instalación en Windows, ejecutamos el siguiente comando:
+
+```bash
+python gui.py
+```
+
 
 ---
 
@@ -62,11 +74,6 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Cómo ejecutar el programa
-
-```bash
-python gui.py
-```
 
 **Flujo de uso:**
 
@@ -84,12 +91,12 @@ El archivo Excel debe contener una hoja llamada `TestCases` con los siguientes e
 | Columna | Descripción |
 |---|---|
 | Funcionalidad | Módulo o funcionalidad que se está probando |
-| Id Caso de Prueba | Identificador único del caso (ej. MTC-FT-001) |
-| Escenario de Prueba | Nombre descriptivo del escenario |
+| Id CP | Identificador único del caso (ej. QA-FUNC-01) |
+| Caso de Prueba | Nombre descriptivo del escenario |
 | Descripcion | Descripción del objetivo del caso de prueba |
 | Pre-Requisitos | Condiciones necesarias antes de ejecutar |
 | Datos de Prueba | Datos de entrada utilizados |
-| No Paso | Número del paso |
+| No. Paso | Número del paso |
 | Descripcion del Paso | Detalle de la acción a ejecutar |
 | Resultado Esperado | Resultado esperado por cada paso |
 | Criticidad | Nivel de criticidad del caso |
@@ -104,14 +111,21 @@ Por cada `Id Caso de Prueba` encontrado en el Excel, el programa genera un archi
 
 ```
 📂 carpeta-destino/
-├── MTC-FT-001.docx
-├── MTC-FT-002.docx
-└── MTC-FT-003.docx
+├── QA-FUNC-01.docx
+├── QA-FUNC-02.docx
+└── QA-FUNC-03.docx
 ```
 
 Cada documento incluye todos los campos del formato de evidencia listos para ser completados por el Tester tras la ejecución.
 
 ---
+
+## 📷 Imagenes
+|Vista Principal|Seleccionar Archivo| Seleccionar Carpeta Destino | Words Generados Correctamente |
+|----|----|----|----|
+|![Menu Principal](image.png)| ![alt text](image-1.png) | ![alt text](image-2.png) | ![alt text](image-3.png) |
+
+
 
 ## 👥 Equipo
 
