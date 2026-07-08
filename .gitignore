@@ -1,0 +1,14 @@
+# Documentos Word generados por el programa
+output/
+
+# Entorno virtual
+env/
+venv/
+
+# Cache de Python
+__pycache__/
+*.pyc
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
